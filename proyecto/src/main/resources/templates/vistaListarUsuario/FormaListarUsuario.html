@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tutorial Spring boot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    
+</head>
+<body>
+<div id="id01"></div>
+<p id="demo"></p>
+    <h1>Listar usuario!</h1>
+          
+        <table BORDER>
+      <tr>
+      <td> idUsuario </td>
+      <td> nombre </td>
+      <td> Apellido </td>
+      </tr>
+
+<!-- FALTA RECORRER LA LISTA A TODOS LOS USUARIOS CON UN SCRIPT -->
+  <td><p th:text=" ${usuarios[0].idUsuario} " /></td>
+   <td><p th:text=" ${usuarios[0].nombre} " /></td>
+     <td><p th:text=" ${usuarios[0].apellido} " /></td>
+</tr>;
+     
+      
+ </table>
+    
+        
+        
+ </body>
+</html>
